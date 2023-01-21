@@ -60,7 +60,6 @@ const deleteProduct =  async(req, res, next) =>{
         if(!product){
             throw new Error("No existe el ID")
         }
-        console.log('ProductJona',product) 
          res.status(200).json({
              status:`Success`,
              data: product
